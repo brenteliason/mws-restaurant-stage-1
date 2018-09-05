@@ -47,6 +47,12 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+a:focus,
+select:focus
+{
+	outline: 3px solid #ff0000;
+}
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
