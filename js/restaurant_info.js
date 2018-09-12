@@ -1,6 +1,14 @@
 let restaurant;
 var newMap;
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+  .register('sw.js')
+  .catch(function(err) {
+    console.error(err);
+  });
+}
+
 /**
  * Initialize map as soon as the page is loaded.
  */
@@ -88,8 +96,9 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   address.innerHTML = restaurant.address;
 
   const image = document.getElementById('restaurant-img');
-  image.className = 'restaurant-img'
+  image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = "restaurant picture";
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
