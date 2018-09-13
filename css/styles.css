@@ -328,3 +328,23 @@ nav h1 a {
 	box-sizing: border-box;
 	text-align: center;/*RD*/
 }
+
+@media screen and (max-width: 600px) {/*display all restaurants in single centered column*/
+		#restaurants-list {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+		}
+}
+
+@media screen and (min-width: 600px) {/*display restaurants in two columns*/
+	#restaurants-list {
+		display: flex;/*RD*/
+		flex-direction: row;/*RD*/
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
