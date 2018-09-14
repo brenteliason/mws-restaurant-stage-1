@@ -343,7 +343,7 @@ nav h1 a {
 		display: flex;/*RD*/
 		flex-direction: row;/*RD*/
 		flex-wrap: wrap;
-		align-items: flex-start;
+		align-items: center;
 		margin-left: auto;
 		margin-right: auto;
 	}

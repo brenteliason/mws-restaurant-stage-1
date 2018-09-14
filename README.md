@@ -3,3 +3,6 @@ I completed this as my fifth project for Udacity's Front-End Web Developed Nanod
 
 ### Specification
 The code was given to me in working condition. I added Mapbox API codes, aria-labels for accessbility, and caching to improve the performance of the app.
+
+### Instructions
+You can run the code on a local server using python. In Git Bash, enter "python -m http.server 8000" and then open up localhost:8000 in a web browser to view the app in working condition.
