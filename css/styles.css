@@ -146,8 +146,9 @@ nav h1 a {
   padding: 30px 0 60px;
   text-align: center;/*RD*/
 	display: flex;/*RD*/
-	flex-direction: column;/*RD*/
+	flex-flow: wrap;/*RD*/
 	align-items: center;/*RD*/
+	justify-content: center;
 }
 #restaurants-list li {
   background-color: #fff;
@@ -341,10 +342,8 @@ nav h1 a {
 @media screen and (min-width: 600px) {/*display restaurants in two columns*/
 	#restaurants-list {
 		display: flex;/*RD*/
-		flex-direction: row;/*RD*/
-		flex-wrap: wrap;
-		align-items: center;
-		margin-left: auto;
-		margin-right: auto;
+		flex-flow: wrap;/*RD*/
+		align-items: center;/*RD*/
+		justify-content: center;
 	}
 }
